@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>encriptador_texto</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <header></header>
+    <main class="principal">
+        <section class="principal__contenedor">
+          <div class="principal__contenedor__logo">
+            <a href=""><img class="principal__contenedor__logo__imagen" src="./assets/Logo.png" alt=""></a>
+          </div>
+          <div class="principal__contenedor__presentacion">
+            <textarea id="principal__contenedor__presentacion__input" class="principal__contenedor__presentacion__input" type="text" placeholder="Ingrese el texto aqui"></textarea>
+            <div class="principal__contenedor__presentacion__minusculas">
+              <img id="principal__contenedor__presentacion__imagen" class="principal__contenedor__presentacion__imagen" src="./assets/bi_exclamation-circle-fill.png" alt="">
+              <p class="principal__contenedor__presentacion__minusculas_texto">Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="principal__contenedor__presentacion__botones">
+              <button onclick="accionEncriptarTexto();" class="principal__contenedor__presentacion__botones__boton">Encriptar</button>
+              <button onclick="accionDesencriptarTexto();" class="principal__contenedor__presentacion__botones__boton">Desencriptar</button>
+            </div>
+          </div>
+          <div id="principal__contenedor__sin__mensaje" class="principal__contenedor__sin__mensaje">
+            <img id="principal__contenedor__imagen" class="principal__contenedor__imagen" src="./assets/Muñeco.png" alt="">
+            <p id="principal__contenedor__sin__mensaje__texto1" class="principal__contenedor__sin__mensaje__texto1">Ningún mensaje fue encontrado</p>
+            <p id="principal__contenedor__sin__mensaje__texto2" class="principal__contenedor__sin__mensaje__texto2">Ingresa el texto que desees encriptar o desencriptar.</p>
+          </div>
+          <div id="principal__contenedor__mensaje" class="principal__contenedor__mensaje">
+            <p id="principal__contenedor__mensaje__texto" class="principal__contenedor__mensaje__texto"></p>
+            <button onclick="copiarContenido();" class="principal__contenedor__mensaje__boton">Copiar</button>
+          </div>  
+        </section>
+    </main>
+    <footer></footer>
+    <script src="./app.js"></script>
+</body>
+</html>
